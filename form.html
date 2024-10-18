@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Challenge</title>
+  </head>
+  <body>
+    <h1>Create Form Challenge:</h1>
+    <h2>Please share your personal details here:</h2>
+
+    <fieldset>
+      <legend><strong>Personal Information</strong></legend>
+      <form>
+        <label for="firstName">First name</label><br />
+        <input type="text" id="firstName" name="firstName" /><br /><br />
+
+        <label for="lastName">Last name</label><br />
+        <input type="text" id="lastName" name="lastName" /><br /><br />
+
+        <label for="birthday">Birthday</label><br />
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+      </form>
+    </fieldset>
+
+    <br />
+    <p>Can you tell us a little more?</p>
+
+    <fieldset>
+      <legend><strong>Further Information</strong></legend>
+      <form>
+        <label for="favColor">Favourite Color:</label>
+        <input type="color" id="favColor" name="favColor" /><br /><br />
+
+        <label for="favPet">What's your favourite pet?</label><br />
+        <input type="text" id="favPet" name="favPet" /><br /><br />
+
+        <p>Do you like:</p>
+        <input
+          type="radio"
+          id="mountains"
+          name="preference"
+          value="mountains"
+        />
+        <label for="mountains">Mountains</label><br />
+        <input type="radio" id="beaches" name="preference" value="beaches" />
+        <label for="beaches">Beaches</label><br /><br />
+      </form>
+    </fieldset>
+    <input type="submit" value="Submit" />
+  </body>
+</html>
