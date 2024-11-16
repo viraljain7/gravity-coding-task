@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gravity Coding | Project 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div
+        class="nav shadow-xl z-[10] fixed top-0 left-0 w-full h-20 flex items-center justify-between px-6 border backdrop-blur-sm"
+      >
+        <div class="logo">
+          <a href="#page1"
+            ><h1 class="text-4xl font-black text-[#233000] font-[font2]">
+              BiteSpot
+            </h1></a
+          >
+        </div>
+        <div
+          class="links -ml-[45vw] flex items-center justify-center gap-10 font-medium text-lg"
+        >
+          <a href="#" class="link">Menu</a>
+          <a href="#" class="link">Food</a>
+          <a href="#" class="link">Services</a>
+        </div>
+        <div class="btn flex items-center justify-center gap-8">
+          <i class="ri-shopping-cart-2-line cursor-pointer text-2xl"></i>
+          <button
+            class="px-7 py-3 bg-[#233000] text-[#F9F6E9] rounded-lg text-white text-sm hover:bg-[#2B3C00]"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div
+        class="menu flex items-center justify-evenly bg-[#B5B4A2]/40 backdrop-blur-sm h-32 w-4/5 absolute left-1/2 -translate-x-1/2 bottom-5 rounded-xl"
+      >
+        <div
+          class="box flex items-center justify-evenly w-[30%] h-24 rounded-lg border-[1px] border-slate-400 bg-white"
+        >
+          <img
+            class="rounded-full w-[5vw] h-[5vw]"
+            src="https://images.unsplash.com/photo-1681579289910-b526d01aa292?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="text flex items-center justify-center flex-col">
+            <h2 class="text-2xl font-bold font-[font2]">Toast</h2>
+            <h1 class="text-2xl font-semibold text-[#F94603]">₹150</h1>
+          </div>
+          <div
+            class="cart w-[3vw] h-[3vw] rounded-full bg-[#2B3C00] flex items-center justify-center"
+          >
+            <i class="text-xl text-white ri-shopping-bag-line"></i>
+          </div>
+        </div>
+        <div
+          class="box flex items-center justify-evenly w-[30%] h-24 rounded-lg border-[1px] border-slate-400 bg-white"
+        >
+          <img
+            class="rounded-full w-[5vw] h-[5vw]"
+            src="https://images.unsplash.com/photo-1700913281386-e2cfc713f117?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="text flex items-center justify-center flex-col">
+            <h2 class="text-2xl font-bold font-[font2]">Sea Food</h2>
+            <h1 class="text-2xl font-semibold text-[#F94603]">₹450</h1>
+          </div>
+          <div
+            class="cart w-[3vw] h-[3vw] rounded-full bg-[#2B3C00] flex items-center justify-center"
+          >
+            <i class="text-xl text-white ri-shopping-bag-line"></i>
+          </div>
+        </div>
+        <div
+          class="box flex items-center justify-evenly w-[30%] h-24 rounded-lg border-[1px] border-slate-400 bg-white"
+        >
+          <img
+            class="rounded-full w-[5vw] h-[5vw]"
+            src="https://images.unsplash.com/photo-1515573866280-06bda6d4e16f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="text flex items-center justify-center flex-col">
+            <h2 class="text-2xl font-bold font-[font2]">Salad</h2>
+            <h1 class="text-2xl font-semibold text-[#F94603]">₹250</h1>
+          </div>
+          <div
+            class="cart w-[3vw] h-[3vw] rounded-full bg-[#2B3C00] flex items-center justify-center"
+          >
+            <i class="text-xl text-white ri-shopping-bag-line"></i>
+          </div>
+        </div>
+      </div>
+      <div
+        id="page1"
+        class="hero h-screen w-full flex items-center justify-center bg-[#F9F6E9]"
+      >
+        <div
+          class="left h-full w-1/2 text-[#233000] flex items-center justify-center gap-8 flex-col"
+        >
+          <div class="txt -mt-8 flex items-start justify-center flex-col pl-8">
+            <h1 class="text-5xl pb-4 font-bold font-[font2]">
+              Spice Of Life: Discovering
+            </h1>
+            <h1 class="text-5xl font-bold font-[font2]">Hidden Ingredients</h1>
+            <br />
+            <p class="w-2/3 font-medium mt-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatibus quia porro, recusandae molestiae eius doloribus nobis
+              quaerat id ipsum blanditiis.Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Voluptatibus
+            </p>
+          </div>
+          <div class="btns w-full flex items-center gap-8 pl-8">
+            <button
+              class="px-7 py-3 bg-[#233000] text-[#F9F6E9] rounded-lg text-white text-sm hover:bg-[#2B3C00]"
+            >
+              Explore Menu
+            </button>
+            <div class="imgs flex items-center justify-center">
+              <img
+                class="rounded-full w-[3vw] h-[3vw] hover:scale-105 transition-all"
+                src="https://images.unsplash.com/photo-1681579289910-b526d01aa292?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                class="-ml-2 rounded-full w-[3vw] h-[3vw] hover:scale-105 transition-all"
+                src="https://images.unsplash.com/photo-1700913281386-e2cfc713f117?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+              <img
+                class="-ml-2 rounded-full w-[3vw] h-[3vw] hover:scale-105 transition-all"
+                src="https://images.unsplash.com/photo-1515573866280-06bda6d4e16f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="right h-full w-1/2 bg-cover bg-center bg-[url('https://plus.unsplash.com/premium_photo-1671403963864-6d46f3b62352?q=80&w=1484&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        ></div>
+      </div>
+      <div
+        id="page2"
+        class="food h-screen w-full bg-[#F9F6E9] relative flex items-center justify-center overflow-hidden"
+      >
+        <div class="left h-full w-1/2">
+          <img
+            class="w-[50vw] z-[2] absolute -bottom-12"
+            src="./Assests/img/chef.png"
+            alt=""
+          />
+          <img
+            class="w-[20vw] absolute top-0 left-8 z-[1]"
+            src="./Assests/img/Leaf.svg"
+            alt=""
+          />
+        </div>
+        <div class="right h-full w-1/2 pt-32 pl-32">
+          <div class="txt -mt-8 flex items-start justify-center flex-col">
+            <h1 class="text-6xl pb-4 font-bold font-[font2]">Excellent Cook</h1>
+            <br />
+          </div>
+          <p class="w-4/5 font-medium pb-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus quia porro, recusandae molestiae eius doloribus nobis
+            quaerat id ipsum blanditiis.Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Voluptatibus
+          </p>
+          <div
+            class="btns w-full flex items-start justify-center gap-8 flex-col"
+          >
+            <button
+              class="px-7 py-3 bg-[#233000] text-[#F9F6E9] rounded-lg text-white text-sm hover:bg-[#2B3C00]"
+            >
+              Cook Now
+            </button>
+            <img
+              class="w-[18vw] relative left-28"
+              src="./Assests/img/Leaf-2.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        id="page3"
+        class="services h-screen w-full bg-[#F9F6E9] relative flex items-center justify-center overflow-hidden"
+      >
+        <div class="txt flex items-center justify-center z-[2]">
+          <p class="text-center text-4xl font-meduim w-[68%] font-[font2]">
+            Lorem ipsum dolor
+            <span class="font-bold text-[#F94603]">sit amet</span> consectetur
+            adipisicing elit.
+            <span class="font-bold text-[#F94603]">Sequi soluta</span>
+            architecto quod provident, aliquam esse tenetur voluptatibus
+            <span class="font-bold text-[#F94603]">impedit praesentium</span>
+            <br />
+            recusandae.
+          </p>
+        </div>
+        <img
+          class="absolute top-24 left-[10%] rounded-xl w-[10vw] object-cover transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          class="absolute top-[40%] -left-20 w-[12vw] rounded-xl h-[20vw] object-cover transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://images.unsplash.com/photo-1483918793747-5adbf82956c4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          class="absolute top-[60%] blur-[1px] right-20 w-[12vw] rounded-xl object-cover transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?q=80&w=1375&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          class="absolute top-[80%] blur-sm left-[20%] w-[6vw] rounded-xl object-cover transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          class="absolute top-[60%] left-[35%] w-[12vw] rounded-xl object-cover transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img
+          class="absolute top-[20%] right-0 w-[6vw] rounded-xl object-cover blur-sm transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://plus.unsplash.com/premium_photo-1663858367001-89e5c92d1e0e?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Image"
+        />
+
+        <img
+          class="absolute top-[23%] right-[20%] w-[14vw] z-[1] rounded-xl object-cover blur-sm transition-all duration-300 ease-in-out hover:blur-none scale-130"
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div
+        class="footer w-full h-[65vh] bg-[#233000] text-[#F9F6E9] flex items-center justify-start gap-10 flex-col"
+      >
+        <div class="top h-20 w-full flex items-center justify-center gap-2">
+          <h1 class="text-xl font-semibold font-[font2]">
+            For Better Experience Install The BiteFood Food App From
+          </h1>
+          <img
+            class="w-[10vw]"
+            src="https://freelogopng.com/images/all_img/1664287128google-play-store-logo-png.png"
+            alt=""
+          />
+          <img
+            class="w-[10vw]"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="btm w-full h-[40vh] flex items-center justify-center gap-16"
+        >
+          <div class="first w-[20%] h-full">
+            <h1 class="text-4xl font-bold pb-2 font-[font2]">
+              <a href="#page1">BiteSpot</a>
+            </h1>
+            <p>© 2024 BiteFood Food Limited</p>
+          </div>
+          <div class="second w-[10%] h-full">
+            <ul class="flex items-start justify-between flex-col gap-2">
+              <li class="text-xl font-bold font-[font2]">Company</li>
+              <li class="cursor-pointer">About Us</li>
+              <li class="cursor-pointer">Carrers</li>
+              <li class="cursor-pointer">Team</li>
+              <li class="cursor-pointer">BiteSpot Instamart</li>
+              <li class="cursor-pointer">BiteSpot One</li>
+              <li class="cursor-pointer">BiteSpot Discount</li>
+              <li class="cursor-pointer">BiteSpot genie</li>
+            </ul>
+          </div>
+          <div
+            class="third w-[10%] h-full flex items-start justify-between flex-col gap-8"
+          >
+            <div class="top">
+              <ul class="flex items-start justify-between flex-col gap-2">
+                <li class="text-xl font-bold font-[font2]">Contact Us</li>
+                <li class="cursor-pointer">Help & Support</li>
+                <li class="cursor-pointer">Partner With Us</li>
+                <li class="cursor-pointer">Ride With Us</li>
+              </ul>
+            </div>
+            <div class="btm">
+              <ul class="flex items-start justify-between flex-col gap-2">
+                <li class="text-xl font-bold">Legal</li>
+                <li class="cursor-pointer">terms & Condition</li>
+                <li class="cursor-pointer">Cookie Policy</li>
+                <li class="cursor-pointer">Privacy Policy</li>
+                <li class="cursor-pointer">Investor Relation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="fourth w-[10%] h-full">
+            <ul class="flex items-start justify-between flex-col gap-2">
+              <li class="text-xl font-bold font-[font2]">Available In:</li>
+              <li class="cursor-pointer">Banglore</li>
+              <li class="cursor-pointer">Gurgaon</li>
+              <li class="cursor-pointer">Hyderabad</li>
+              <li class="cursor-pointer">Delhi</li>
+              <li class="cursor-pointer">Mumbai</li>
+              <li class="cursor-pointer">Pune</li>
+              <li class="cursor-pointer">
+                <select
+                  class="border-[#F9F6E9] border-[1px] bg-[#233000] rounded-md px-4 py-2"
+                  name="679"
+                  id="679"
+                >
+                  <option value="679 Cities">679 Cities</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Delhi">Delhi</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="fifth w-[20%] h-full flex items-start justify-start flex-col gap-10"
+          >
+            <div class="top">
+              <ul class="flex items-start justify-center flex-col gap-2">
+                <li class="text-xl font-bold font-[font2]">
+                  Life At BiteFood Food
+                </li>
+                <li class="cursor-pointer">Explore With BiteFood</li>
+                <li class="cursor-pointer">BiteFood News</li>
+                <li class="cursor-pointer">Snackables</li>
+              </ul>
+            </div>
+            <div class="btm">
+              <h1 class="text-xl font-bold mb-2 font-[font2]">Social Links</h1>
+              <div
+                class="links flex items-center justify-center gap-4 text-xl cursor-pointer"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-pinterest-fill"></i>
+                <i class="ri-twitter-x-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

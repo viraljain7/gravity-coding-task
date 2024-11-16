@@ -1,0 +1,120 @@
+/* Essential CSS3 Boilerplate */
+
+/* CSS Reset to ensure consistency across browsers */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font size and basic body styles */
+html {
+  font-size: 16px; /* Base font size */
+  line-height: 1.5; /* Improved readability */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333; /* Default text color */
+  background-color: #f9f9f9; /* Default background color */
+  min-height: 100vh; /* Ensure full height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Anchor tag styling */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Form elements consistency */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive utility */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Adjust for smaller screens */
+  }
+}
+
+::selection {
+  background-color: #233000;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(./Fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(./Fonts/EBGaramond-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: font3;
+  src: url(./Fonts/EduAUVICWANTPre-VariableFont_wght.ttf);
+}
+.scale-130:hover {
+  transform: scale(1.3);
+}
